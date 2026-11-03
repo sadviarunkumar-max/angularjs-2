@@ -12,10 +12,19 @@
 <body ng-controller="MyController">
 
     <h1>Student Details</h1>
-    <h2>Hello {{ name }}</h2>
-    <h3> update the student name</h3>
+    <h2>Hello {{ student.name }}</h2>
+    <h2> your age is {{ student.age}}</h2>
+    <h3> update the student name and age</h3>
     <input type="text" ng-model="name">
-    <p> updated name:{{ name }}</p>
+    <p> updated name:{{ student.name }}
+        updated age:{{student.age}}
+    </p>
+
+    <ul>
+        <li><strong>age:</strong> {{ student.age }}</li>
+        <li><strong>Department:</strong> {{ student.department }}</li>
+        <li><strong>Semester:</strong> {{ student.semester }}</li>
+    </ul>
 
 </body>
 </html>
