@@ -1,15 +1,13 @@
 
 var app = angular.module('myApp', []);
-
-
-app.controller('MyController', function($scope) {
-    
-    
-    $scope.student = {
-        name: "Sadvi",
-        age: "20",
-        department: "Information Science and Engineering",
-        semester: "3rd sem"
-    };
-    
+//parent controller
+app.controller('collegecontroller',function($scope){
+    $scope.collegename="abc college";
 });
+//child controller
+app.controller('studentcontroller', function($scope)
+{
+    $scope.name="Sadvi",
+    $scope.department= "Information Science and Engineering";
+}
+);
